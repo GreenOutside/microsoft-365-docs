@@ -128,6 +128,5 @@ In Azure Cost Management, SharePoint and OneDrive cost attribution by siteIDs ar
    
 <img width="959" height="662" alt="image" src="https://github.com/user-attachments/assets/b342a1a9-274a-4732-893c-81865558edbb" />
 
-
 > [!WARNING]  
 >The **MailboxDbGuid** tag in the Azure consumption report is intended for Microsoft internal use only. We recommend that you don't rely on it because its value might change. Note that this is different from the MailboxId.
