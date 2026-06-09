@@ -101,7 +101,7 @@ To view tags:
 
         - **applications** shows a list of app IDs.
 
-        - Exchange mailbox - Not available.
+        - Exchange mailbox - Mailbox ID of mailbox backed up. Note this attribution is only available on explicit admin               consent as detailed in section **Billing attribution for Exchange Mailbox**
 
         - OneDrive account - SiteId of the corresponding OneDrive site.
 
@@ -118,6 +118,16 @@ To view tags:
     ![Screenshot of the recommended view to see costs by resources in Microsoft Cost Management.](../media/m365-backup/backup-cost-by-resources-view.png)
 
 5. Set up budget alerts on cost by following the steps in the [Cost Management public APIs](/rest/api/cost-management/operation-groups).
+
+### Billing attribution for Exchange Mailbox Consent
+
+In Azure Cost Management, SharePoint and OneDrive cost attribution by siteIDs are included by default. If you want to see cost attribution of your Microsoft 365 Backup consumption by mailboxes in Azure Cost Management, you need to enable a settings and give consent to send mailbox ID to Azure services as part of a Microsoft 365 privacy requirement. This settings is not applicable for cost attribution by siteID. You can follow the instructions below to enable cost attrubution by mailbox ID and provide consent. We recommend you read the consent language carefully before enabling the cost attrubition by mailbox settings. 
+
+1. In Microsoft 365 Backup home page, click on the three dots on **Exchange** and select **Settings**
+2. In the panel that opens, read the consent language and select the checbox if you agree with Exchange mailbox ID being sent to Azure.
+   
+<img width="959" height="662" alt="image" src="https://github.com/user-attachments/assets/b342a1a9-274a-4732-893c-81865558edbb" />
+
 
 > [!WARNING]  
 >The **MailboxDbGuid** tag in the Azure consumption report is intended for Microsoft internal use only. We recommend that you don't rely on it because its value might change. Note that this is different from the MailboxId.
